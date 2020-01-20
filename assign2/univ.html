@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+           
+        }
+        #navbar1{
+            background-color: #373F6E;
+            border: 2px solid grey;
+            height: inherit;
+            width: auto;
+            height: 30px;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            text-align: right;
+        }
+        #navbar2{
+            font-size: 20px;
+            padding: 2px;
+            position: relative;
+            
+            
+        }
+        .navbar ul li{
+            list-style-type: none;
+            display: inline;
+            padding: 10px;
+            border-radius: 2px;
+        }
+        .logo{
+            float: left;
+            padding: 20px;
+        }
+        .navbar{
+            float: inherit;
+        }
+        #navbar1 a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        #navbar2 a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        #navbar2 li:hover{
+            background: rgba(55, 63, 110, 0.4);
+            
+        }
+        #navbar1 li:hover{
+            background: rgba(237,36,72, 0.6);
+            
+        }
+        
+        .navbar li:hover .dropdown{
+            display: block;
+        }
+        
+        .dropdown{
+            position: absolute;
+            display: block;
+            
+            
+        }
+        #navbar2 li:hover .dropdown{
+            display: block;
+            
+        }
+        .slider{
+            z-index: -5;
+            position: relative;
+            
+        }
+        
+        .caption{
+            position: absolute;
+            bottom: 40px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            border-right: 5px solid red;
+            padding: 0px 10px 5px 10px;
+            font-size: 35px;
+        }
+        
+        .slider img{
+            width: 100%;
+            height: 600px;
+            margin: 4px;
+            margin-top: -4px;
+        }
+        
+    
+        #cards{
+            background-image: linear-gradient(white 55%, #102D74 45%);
+            
+            width: auto;
+            height: auto;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        
+        }
+        .text{
+            color: white;
+            font-size: 18px;
+        }
+        #cards .c1{
+            width: 70%;
+            margin-bottom: 40px;
+           
+          
+        }
+        .c2 img:hover{
+           box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.8), 0 10px 24px 0 rgba(0, 0, 0, 0.4);
+              -ms-transform: scale(1.2); /* IE 9 */
+              -webkit-transform: scale(1.2); /* Safari 3-8 */
+              transform: scale(1.2); 
+            z-index: 50;
+            cursor: pointer;
+        }
+        .c2 img{
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 8px 22px 0 rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .c2{
+            position: relative;
+            
+            color: white;
+           
+        }
+        
+        .block{
+           position: absolute;
+              bottom: 20px;
+              right: 18px;
+              width: 316px;
+              background-color: black;
+              color: white;
+              padding-left: 20px;
+              padding-right: 20px;
+        
+        }
+      
+        .info{
+            background-image: url(banner.jpg);
+            background-repeat: repeat;
+            background-size: ;
+            padding: 30px 120px 30px 120px;
+            margin-top: 60px;
+            color: white;
+            font-size: 27px;
+        }
+        .content .left{
+            width: 50%;
+           
+        }
+      
+        .bt{
+            background-color: #961E19;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            color: white;
+            border-radius: 2px;
+        }
+    
+        .vertical_dotted_line
+        {
+            border-left: 1px dotted red;
+            height: 80px;
+            margin-left: 550px;
+            width: 1px;
+            
+        } 
+        #container {
+          display: flex;                  /* establish flex container */
+          flex-direction: row;            /* default value; can be omitted */
+          flex-wrap: nowrap;              /* default value; can be omitted */
+          justify-content: space-between; /* switched from default (flex-start, see below) */
+          background-color: #102B74;
+                    color: white;
+        }
+        #container > div {
+          width: 200px;
+          height: auto;
+
+        }
+        
+        #academics{
+            
+            margin: 20px 30px 10px 30px;
+            padding: 10px;
+            margin-bottom: 100px;
+         
+        }
+      
+        #academics .contents img{
+            float: right;
+        }
+        
+        .footer {
+               left: 0;
+               bottom: 0;
+               height: 40px;
+               width: auto;
+               background-color: #373F6E;
+               color: white;
+               text-align: center;
+               padding: 10px;
+                margin-top: 10px;
+            }
+    </style>
+    
+</head>
+<body>
+    <div class="nav">
+       <div class="logo">
+          <img src="BLogo.png" alt="">
+          
+           
+       </div>
+       <div class="navbar">
+         
+          <ul id="navbar1">
+              <li><a href="">Announcements</a></li>
+              
+              <li><a href="">Career</a></li>
+              <li><a href="">Faculty</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Official Blogs</a></li>
+              <li><a href="">Events</a></li>
+              <li><a href="">Next Tech Lab</a></li>
+              <li><a href="">Ennovab</a></li>
+              <li><a href="">Contact Us</a></li>
+              
+          </ul>
+          
+          <ul id="navbar2">
+              <li id="active"><a href="">Home</a></li>
+              <li><a href="">Collaborations</a></li>
+              <li><a href="">Academics</a></li>
+              <li><a href="">Research</a></li>
+              <li><a href="">Admissions</a></li>
+              <li><a href="">Campus Life</a></li>
+              <li><a href="">Students Abroad</a></li>
+              <li><a href="">About Us</a></li>
+              
+          </ul>
+    
+           
+       </div>
+        
+    </div>
+    
+    <div class="slider">
+       <img src="slide.jpg" alt="">
+       <div class="caption">
+          <p>Welcome to SRM University Andhra Pradesh.</p> 
+       </div>
+        
+    </div>
+    
+    <div id="cards" align="center">
+      
+       <div class="c1">
+        <h2 style="font-size: 40px; color: #102D74">Study at SRM</h2>
+            <p style="font-size: 20px;">JGU fosters curriculum, research, and collaborations of the highest standards, and with a global perspective, through a faculty drawn from and educated throughout the world</p>
+        </div>
+           
+            <div class="c2">  
+           
+             
+             <img src="c1.jpg" alt="" style="margin: 20px;">
+                 
+            <img src="c2.jpg" alt="" style="margin: 20px;">
+          
+            <img src="c3.jpg" alt="" style="margin: 20px;">
+            
+           </div>
+           
+           <div class="text">
+               <p>At SRM, we believe in the power of education to transform lives. We offer students a rich selection of graduate and undergraduate programmes to choose from across faculties. With our curriculum benchmarked against the best institutions in the world, we ensure that our students are prepared for a dynamic world.</p>
+           </div>
+    </div>
+    
+    <div id="academics">
+      <div align="center">
+       <h1 style="font-size: 40px; color: #102D74">Academics</h1>
+       <p style="font-size: 20px;">Unsurpassed academic opportunities and programs designed to inculcate a love of learning, path breaking research and intellectual growth to help meet student-goals.</p>
+       </div>
+       
+       <div class="contents">
+         <p style="font-size: 25px;"><img src="academic.jpg" alt="Pineapple" style="width: 370px; margin-left: 30px; border-radius: 4px;">
+SRM AP offers a rich selection of graduate and undergraduate programmes in Engineering, Liberal Arts and Business Management. <br><br>
+          With an interdisciplinary curriculum benchmarked against the best institutions in the world and delivered in a technology-driven active learning platform, ensures that our students are well-prepared to meet challenges in a dynamic and rapidly changing world.
+          </p>
+           
+       </div>
+       
+        
+    </div>
+    
+    
+    <div class="info">
+       <div class="content">
+         
+             <div class="left">
+                  <h1>About SRM</h1>
+                      <p>SRM University, Andhra Pradesh is a multi-stream research university with focus on diverse fields. From engineering to medicine and from liberal arts to management, SRM’s vision is to emerge as a world-class university that is globally connected, nationally relevant, and regionally transformative. It has the ambitious plan to be in the top world class universities in ten years with 20000 + students and 1500 faculty members.</p>
+                      
+                      <button class="bt">About SRM</button>
+                   </div>
+               
+               <div class="right">
+
+               </div>
+       </div>
+        
+    </div>
+    <div class="content-down">
+         <div id="container">
+              <div style="margin-left: 260px;"><p><font size="5"><b>Collaborations</b></font> with <br>the world’s best universities.</p></div>
+              <div style="border-left: 2px dotted white; width: 2px; height: 60px; margin-top: 10px;"></div>
+              <div><p><font size="5"><b>200 acres</b></font> campus designed by world renowned architects</p></div>
+              <div style="border-left: 2px dotted white; width: 2px; height: 60px; margin-top: 10px;"></div>
+              <div style="margin-right: 260px;"><p><font size="5"><b>100% Faculty</b></font> <br>with International Exposure</p></div>
+        </div>
+    </div>
+    
+    <div class="footer">
+      <p>SRM University, Andhra Pradesh © 2020 All rights reserved.</p>
+      <p style="color: black; font-size: 15px;"> Developed by AJ</p>
+    </div>
+</body>
+</html>
